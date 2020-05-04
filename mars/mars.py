@@ -4,6 +4,7 @@ Mars is a demo project for showing neat ideas.
 
 Handles the primary functions
 """
+from .due import due, Doi, BibTeX
 
 
 def canvas(with_attribution=True):
@@ -29,6 +30,11 @@ def canvas(with_attribution=True):
     return quote
 
 
+@due.dcite(Doi("10.1021/acs.jpcb.8b11527"), description="Solves all problems")
+def cite_matt_test():
+    pass
+
+
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
-    print(canvas())
+    cite_matt_test()

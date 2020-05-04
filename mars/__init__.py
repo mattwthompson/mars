@@ -5,6 +5,7 @@ Mars is a demo project for showing neat ideas.
 
 # Add imports here
 from .mars import *
+from .due import *
 
 # Handle versioneer
 from ._version import get_versions
